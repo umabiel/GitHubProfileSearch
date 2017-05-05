@@ -1,6 +1,17 @@
+<div class="row">
+	<div class="col-md-12">
+		<form class="well">
+			<input type="text" class="form-control" [(ngModel)]="username" name="username" (keyup)="searchGithubProfile()"
+				placeholder="Ingrese Usuario de Github..." >
+		</form>
+	</div>
+</div>
 <div *ngIf="user">
-	
-	<div class="panel panel-default">
+
+	<div class="row">
+		<div class="col-md-12">
+			
+<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">{{ user.name }}</h3>
 		</div>
@@ -53,5 +64,11 @@
 			</div>
 		</div>
 	</div>
+	
+
+
+		</div>
+	</div>
+	
 	
 </div>
